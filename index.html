@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>task</title>
+		<meta name="this programm requests data by url and filters the desired requests " content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="mohammed rahman">
+
+	</head>
+
+	<body>
+
+
+		<span>postal code:</span>								<!--first api starts here-->
+		<select id="selPcode" >  												
+			<option value="8771">8771</option>
+            <option value="8774">8774</option>
+            <option value="8775">8775</option>
+            <option value="8776">8776</option>
+            <option value="8777">8777</option>
+			
+		</select>
+
+
+		<button id="start">run</button>
+
+		<br><br>
+
+		<div id="header">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+						latitude: 
+					</td>
+					<td id="txtlng">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						longitude: 
+					</td>
+					<td id="txtLat">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						distance: 
+					</td>
+					<td id="txtDistance">
+						
+					</td>
+
+				</tr>
+				
+				<tr>
+					<td align="right">
+						placename: 
+					</td>
+					<td id="txtplacename">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						country code: 
+					</td>
+					<td id="txtcountrycode">
+						
+					</td>
+
+				</tr>
+		</div>			
+
+			</table>
+<br>									<!--second api starts here -->		
+		<span>select latitude</span>	
+		
+			<input id="sellat">  
+			
+        <span>select longitude:</span>
+		
+			<input id="sellng">
+
+		<button id="inirun">run</button>
+
+		<br><br>
+
+		<div id="main">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+						distance : 
+					</td>
+					<td id="txtForDistance">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Lat: 
+					</td>
+					<td id="txtForLat">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						country: 
+					</td>
+					<td id="txtCountryname">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						populated: 
+					</td>
+					<td id="populated">
+						
+					</td>
+
+				</tr>
+
+
+			</table>
+		</div>	
+<br>									<!--third api starts here--> 
+        <span>select postcode:</span>
+		<select id="selcode">
+			<option value="9001">9001</option>
+			<option value="9001">9011</option>
+			<option value="9111">9111</option>
+			<option value="9000">9000</option>
+		</select>
+        <span>select country:</span>
+		<select id="selcountry">
+			<option value="nl">Netherland</option>
+			<option value="at">Australia</option>
+			<option value="ch">Switzerland</option>
+		</select>
+
+		<button id="startrun">run</button>
+
+		<br><br>
+
+		<div id="preloader">
+			
+			<table>
+
+				<tr>
+					<td align="right">
+						Name of place: 
+					</td>
+					<td id="txtname">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						longitude: 
+					</td>
+					<td id="txtlong">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						latitude: 
+					</td>
+					<td id="txtlati">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						admincode: 
+					</td>
+					<td id="txtadminName">
+						
+					</td>
+
+				</tr>
+
+		</div>
+			</table>
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
